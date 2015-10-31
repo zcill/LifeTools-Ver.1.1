@@ -13,6 +13,7 @@
 #import "ZCMainCollectionViewController.h"
 #import "ZCRootViewController.h"
 #import "ZCAllToolsCollectionViewController.h"
+#import "ZCUserTableViewController.h"
 
 @interface ZCCustomTabBar ()
 {
@@ -29,10 +30,6 @@
     
     [self customTabBar];
     [self setupAllSubViewControllers];
-}
-
-- (void)viewWillDisappear:(BOOL)animated {
-    [imageView setHidden:YES];
 }
 
 #pragma mark - 定制TabBar
@@ -131,6 +128,7 @@
     ZCRootViewController *navi2 = [[ZCRootViewController alloc] init];
     [self addChildViewController:navi2 title:@"团购"];
     
+    // 设置工具一级页面的布局
     UICollectionViewFlowLayout *toolsLayout = [[UICollectionViewFlowLayout alloc] init];
     toolsLayout.itemSize = CGSizeMake(80, 80);
     toolsLayout.minimumInteritemSpacing = 0;
@@ -141,7 +139,7 @@
     ZCAllToolsCollectionViewController *navi3 = [[ZCAllToolsCollectionViewController alloc] initWithCollectionViewLayout:toolsLayout];
     [self addChildViewController:navi3 title:@"工具"];
     
-    ZCRootViewController *navi4 = [[ZCRootViewController alloc] init];
+    ZCUserTableViewController *navi4 = [[ZCUserTableViewController alloc] init];
     [self addChildViewController:navi4 title:@"我的"];
     
 }
