@@ -14,7 +14,10 @@
 #import <SVProgressHUD/SVProgressHUD.h>
 // 导入自己写的
 #import "ZCWeatherModel.h"
+<<<<<<< HEAD
 #import "ZCAboutViewController.h"
+=======
+>>>>>>> origin/master
 
 @interface ZCUserTableViewController ()<RETableViewManagerDelegate, MFMailComposeViewControllerDelegate>
 
@@ -50,7 +53,11 @@
     [self addSectionUpdate];
     [self addSectionSetting];
     [self addSectionSuggestion];
+<<<<<<< HEAD
     [self addSectionAbout];
+=======
+    
+>>>>>>> origin/master
 }
 
 // 添加第一个section
@@ -62,7 +69,11 @@
     section.headerHeight = SectionHeaderHeight;
     section.footerHeight = SectionFooterHeight;
     
+<<<<<<< HEAD
     // 创建检查更新条目
+=======
+    // 创建条目
+>>>>>>> origin/master
     RETableViewItem *item = [RETableViewItem itemWithTitle:@"检查更新" accessoryType:UITableViewCellAccessoryNone selectionHandler:^(RETableViewItem *item) {
         
         [SVProgressHUD showWithStatus:@"检查更新中..." maskType:SVProgressHUDMaskTypeGradient];
@@ -148,7 +159,11 @@
         }
         
         // 判断缓存文件
+<<<<<<< HEAD
         if (fileCount <= 1) {
+=======
+        if (fileCount == 0) {
+>>>>>>> origin/master
             [SVProgressHUD showErrorWithStatus:@"暂时没有缓存文件!"];
         } else {
             [SVProgressHUD showSuccessWithStatus:[NSString stringWithFormat:@"清理缓存文件%ld个", fileCount]];
@@ -172,7 +187,11 @@
     section.headerTitle = @"评价反馈";
     
     // 创建评价条目
+<<<<<<< HEAD
     RETableViewItem *discussItem = [RETableViewItem itemWithTitle:@"评分与评价" accessoryType:UITableViewCellAccessoryDisclosureIndicator selectionHandler:^(RETableViewItem *item) {
+=======
+    RETableViewItem *discussItem = [RETableViewItem itemWithTitle:@"评分与评价" accessoryType:UITableViewCellAccessoryNone selectionHandler:^(RETableViewItem *item) {
+>>>>>>> origin/master
         
     }];
     [section addItem:discussItem];
@@ -186,6 +205,7 @@
     
 }
 
+<<<<<<< HEAD
 // 添加第四个section
 - (void)addSectionAbout {
     
@@ -229,6 +249,8 @@
     return versionLabel;
 }
 
+=======
+>>>>>>> origin/master
 // 发送邮件
 - (void)sendEmail {
     
@@ -269,6 +291,7 @@
 // 转到系统邮件
 - (void)launchMailAppOnDevice {
     
+<<<<<<< HEAD
     NSString *recipients = @"mailto:first@example.com&subject=my email!";
     NSString *body = @"&body=email body!";
     
@@ -276,6 +299,9 @@
     emailPath = [emailPath stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:emailPath]];
+=======
+#warning 邮件未完成
+>>>>>>> origin/master
     
 }
 

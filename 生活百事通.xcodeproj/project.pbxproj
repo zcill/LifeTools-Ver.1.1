@@ -26,6 +26,7 @@
 		4C9B47A01BDE09450030B947 /* Orders.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C9B479A1BDE09450030B947 /* Orders.plist */; };
 		4C9B47A11BDE09450030B947 /* ProvincesAndCities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C9B479B1BDE09450030B947 /* ProvincesAndCities.plist */; };
 		4CB141651BDA24E40060F5A5 /* ZCWeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB141641BDA24E40060F5A5 /* ZCWeatherModel.m */; };
+		4CBB8C1A1BE4E43F002732E5 /* ZCUserTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBB8C191BE4E43F002732E5 /* ZCUserTableViewController.m */; };
 		4CDBCB811BD789B900310898 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDBCB801BD789B900310898 /* main.m */; };
 		4CDBCB841BD789B900310898 /* ZCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDBCB831BD789B900310898 /* ZCAppDelegate.m */; };
 		4CDBCB8A1BD789B900310898 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CDBCB881BD789B900310898 /* Main.storyboard */; };
@@ -103,6 +104,8 @@
 		4C9B479B1BDE09450030B947 /* ProvincesAndCities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ProvincesAndCities.plist; sourceTree = "<group>"; };
 		4CB141631BDA24E40060F5A5 /* ZCWeatherModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCWeatherModel.h; sourceTree = "<group>"; };
 		4CB141641BDA24E40060F5A5 /* ZCWeatherModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCWeatherModel.m; sourceTree = "<group>"; };
+		4CBB8C181BE4E43F002732E5 /* ZCUserTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCUserTableViewController.h; sourceTree = "<group>"; };
+		4CBB8C191BE4E43F002732E5 /* ZCUserTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCUserTableViewController.m; sourceTree = "<group>"; };
 		4CDBCB7C1BD789B900310898 /* 生活百事通.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "生活百事通.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CDBCB801BD789B900310898 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4CDBCB821BD789B900310898 /* ZCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCAppDelegate.h; sourceTree = "<group>"; };
@@ -335,6 +338,18 @@
 			name = "各类功能(二级页面)";
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
+=======
+		4CBB8C171BE4E24C002732E5 /* User(我的) */ = {
+			isa = PBXGroup;
+			children = (
+				4CBB8C181BE4E43F002732E5 /* ZCUserTableViewController.h */,
+				4CBB8C191BE4E43F002732E5 /* ZCUserTableViewController.m */,
+			);
+			name = "User(我的)";
+			sourceTree = "<group>";
+		};
+>>>>>>> origin/master
 		4CDBCB731BD789B900310898 = {
 			isa = PBXGroup;
 			children = (
@@ -365,7 +380,11 @@
 				4C3631841BDA55B00010C0CC /* Public(公用) */,
 				4CF8DB371BD87050006853CB /* Main(生活) */,
 				4CEC81C11BE490AF000AFF83 /* AllTools(工具) */,
+<<<<<<< HEAD
 				4CEE0B981BE614AF0026B344 /* User(我的) */,
+=======
+				4CBB8C171BE4E24C002732E5 /* User(我的) */,
+>>>>>>> origin/master
 				4C6B33C61BD7968700475586 /* Root */,
 				4C6B33D21BD7B9C700475586 /* tabbar */,
 				4C6B33C21BD7964B00475586 /* Application */,
@@ -744,6 +763,7 @@
 				4C6B33C51BD7967F00475586 /* ZCRootViewController.m in Sources */,
 				4C9B47951BDE06CB0030B947 /* ZCCitiesTableViewController.m in Sources */,
 				4C14E9F21BE0C25C00B2C4CB /* ZCIDCardSearchTableViewController.m in Sources */,
+				4CBB8C1A1BE4E43F002732E5 /* ZCUserTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -73,13 +73,12 @@
 
 - (void)addSectionOutDoor {
     
+    // 添加ItemSection
     ZCSectionModel *section = [ZCSectionModel defaultSection];
     section.headerTitle = @"出行必备";
     
-    // 添加ItemSection
-    ZCItemModel *trainItem = [ZCItemModel itemWithTitle:@"火车查询" icon:@"train" destVcClass:[ZCRootViewController class]];
-    
     // 添加Item
+    ZCItemModel *trainItem = [ZCItemModel itemWithTitle:@"火车查询" icon:@"train" destVcClass:[ZCRootViewController class]];
     ZCItemModel *oilItem = [ZCItemModel itemWithTitle:@"今日油价" icon:@"oil" destVcClass:[ZCRootViewController class]];
     
     [section.items addObjectsFromArray:@[trainItem, oilItem]];
