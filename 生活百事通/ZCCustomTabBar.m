@@ -119,7 +119,7 @@
     layout.minimumLineSpacing = 10;
     layout.sectionInset = UIEdgeInsetsMake(10, 0, 0, 0);
     layout.parallaxHeaderReferenceSize = CGSizeMake(ScreenWidth, 165);
-    layout.headerReferenceSize = CGSizeMake(200, 50);
+    layout.headerReferenceSize = CGSizeMake(200, 40);
     
     ZCMainCollectionViewController *main = [[ZCMainCollectionViewController alloc] initWithCollectionViewLayout:layout];
     [self addChildViewController:main title:@"生活"];
@@ -134,7 +134,7 @@
     toolsLayout.minimumInteritemSpacing = 0;
     toolsLayout.minimumLineSpacing = 10;
     toolsLayout.sectionInset = UIEdgeInsetsMake(10, 0, 0, 0);
-    toolsLayout.headerReferenceSize = CGSizeMake(200, 50);
+    toolsLayout.headerReferenceSize = CGSizeMake(200, 40);
     
     ZCAllToolsCollectionViewController *navi3 = [[ZCAllToolsCollectionViewController alloc] initWithCollectionViewLayout:toolsLayout];
     [self addChildViewController:navi3 title:@"工具"];
