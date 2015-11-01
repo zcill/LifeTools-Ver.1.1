@@ -13,6 +13,7 @@
 #import "ZCMainCollectionViewController.h"
 #import "ZCRootViewController.h"
 #import "ZCAllToolsCollectionViewController.h"
+#import "ZCUserTableViewController.h"
 
 @interface ZCCustomTabBar ()
 {
@@ -141,7 +142,7 @@
     ZCAllToolsCollectionViewController *navi3 = [[ZCAllToolsCollectionViewController alloc] initWithCollectionViewLayout:toolsLayout];
     [self addChildViewController:navi3 title:@"工具"];
     
-    ZCRootViewController *navi4 = [[ZCRootViewController alloc] init];
+    ZCUserTableViewController *navi4 = [[ZCUserTableViewController alloc] init];
     [self addChildViewController:navi4 title:@"我的"];
     
 }
